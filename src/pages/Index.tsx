@@ -6,6 +6,7 @@ import { ShowcaseSection } from "@/components/sections/showcase-section"
 import { CarouselSection } from "@/components/sections/carousel-section"
 import { InsightsSection } from "@/components/sections/insights-section"
 import { PricingSection } from "@/components/sections/pricing-section"
+import { AboutSection } from "@/components/sections/about-section"
 import { FooterSection } from "@/components/sections/footer-section"
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <ShowcaseSection />
         <CarouselSection />
         <InsightsSection />
+        <AboutSection />
         <PricingSection />
         <FooterSection />
       </main>
