@@ -73,7 +73,7 @@ export function FooterSection() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">2025 Алесия Лапути. Все права защищены.</p>
+          <p className="text-muted-foreground text-sm">2025 Алеся Лапути. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm" data-clickable>
               Конфиденциальность

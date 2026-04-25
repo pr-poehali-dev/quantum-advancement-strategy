@@ -81,7 +81,7 @@ export function HeroSection() {
           Бизнес. Спорт. <em className="italic">Успех.</em>
         </h1>
         <p className="text-lg md:text-xl text-foreground/70 text-center max-w-md mix-blend-difference pointer-events-none">
-          Сообщество единомышленников Алесии Лапути
+          Сообщество единомышленников Алеси Лапути
         </p>
         <motion.a
           href="https://t.me/mwcola"
