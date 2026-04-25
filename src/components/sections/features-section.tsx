@@ -86,11 +86,11 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Возможности
+          Что вы получаете
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Typography Card */}
+          {/* Business Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -101,16 +101,22 @@ export function FeaturesSection() {
             transition={{ duration: 0.2 }}
             data-clickable
           >
-            <div className="flex-1">
-              <TypeTester />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="font-serif text-7xl md:text-8xl text-foreground"
+                animate={{ scale: [1, 1.15, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              >
+                💼
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Типографика</h3>
-              <p className="text-muted-foreground text-sm mt-1">Красивые шрифты, которые идеально масштабируются.</p>
+              <h3 className="font-serif text-xl text-foreground">Бизнес</h3>
+              <p className="text-muted-foreground text-sm mt-1">Инсайты, кейсы и стратегии от практикующих предпринимателей.</p>
             </div>
           </motion.div>
 
-          {/* Layouts Card */}
+          {/* Sport Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -121,16 +127,22 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <LayoutAnimation />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="font-serif text-7xl md:text-8xl text-foreground"
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                🏆
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Макеты</h3>
-              <p className="text-muted-foreground text-sm mt-1">Гибкие сетки, которые адаптируются под контент.</p>
+              <h3 className="font-serif text-xl text-foreground">Спорт</h3>
+              <p className="text-muted-foreground text-sm mt-1">Дисциплина, энергия и мотивация для достижения целей.</p>
             </div>
           </motion.div>
 
-          {/* Speed Card */}
+          {/* Success Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -141,12 +153,18 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <SpeedIndicator />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="font-serif text-7xl md:text-8xl text-foreground"
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              >
+                🚀
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Скорость</h3>
-              <p className="text-muted-foreground text-sm mt-1">Молниеносная загрузка страниц для ваших гостей.</p>
+              <h3 className="font-serif text-xl text-foreground">Успех</h3>
+              <p className="text-muted-foreground text-sm mt-1">Окружение людей, которые растут и тянут вас вверх.</p>
             </div>
           </motion.div>
         </div>

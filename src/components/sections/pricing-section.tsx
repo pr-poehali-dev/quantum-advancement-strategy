@@ -3,18 +3,31 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "На год",
+    price: "12 666",
+    period: " ₽ / год",
+    description: "Доступ в закрытый чат на 12 месяцев",
+    features: [
+      "Закрытый чат единомышленников",
+      "Темы: бизнес, спорт, успех",
+      "Общение с Алесией Лапути",
+      "Обновления и инсайты",
+      "Доступ к архиву материалов",
+    ],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Навсегда",
+    price: "18 999",
+    period: " ₽ / навсегда",
+    description: "Пожизненный доступ без ограничений",
+    features: [
+      "Закрытый чат единомышленников",
+      "Темы: бизнес, спорт, успех",
+      "Общение с Алесией Лапути",
+      "Обновления и инсайты",
+      "Доступ к архиву материалов",
+      "Пожизненное членство навсегда",
+    ],
     popular: true,
   },
 ]
@@ -29,8 +42,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Выберите свой формат</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Один раз — и вы внутри сообщества, которое меняет жизнь.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +88,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Вступить в чат
               </button>
             </motion.div>
           ))}
