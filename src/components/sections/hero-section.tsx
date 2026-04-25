@@ -87,7 +87,7 @@ export function HeroSection() {
           href="https://t.me/mwcola"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 px-8 py-4 bg-foreground text-background rounded-full font-medium text-lg hover:bg-foreground/90 transition-colors"
+          className="mt-2 px-8 py-4 bg-red-600 text-white rounded-full font-medium text-lg hover:bg-red-700 transition-colors"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
