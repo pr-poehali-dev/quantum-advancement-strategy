@@ -81,15 +81,18 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors ${
+              <a
+                href="https://t.me/mwcola"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors block text-center ${
                   plan.popular
                     ? "bg-primary text-primary-foreground hover:bg-primary/90"
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
                 Вступить в чат
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>
