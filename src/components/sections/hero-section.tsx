@@ -72,17 +72,30 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10 gap-6"
+        className="absolute inset-0 flex flex-col items-center justify-center z-10 gap-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference pointer-events-none">
           Бизнес. Спорт. <em className="italic">Успех.</em>
         </h1>
-        <p className="text-lg md:text-xl text-foreground/70 text-center max-w-md mix-blend-difference">
+        <p className="text-lg md:text-xl text-foreground/70 text-center max-w-md mix-blend-difference pointer-events-none">
           Сообщество единомышленников Алесии Лапути
         </p>
+        <motion.a
+          href="https://t.me/mwcola"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 px-8 py-4 bg-foreground text-background rounded-full font-medium text-lg hover:bg-foreground/90 transition-colors"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          Вступить в чат →
+        </motion.a>
       </motion.div>
 
       <motion.div
